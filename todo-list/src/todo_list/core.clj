@@ -1,18 +1,23 @@
-; (ns todo-list.core
-;   (:gen-class))
-(ns example.core
-	(:require
-		[ring.adapter.jetty :as jetty]))
+(ns todo-list.core
+  (:gen-class))
+; (ns example.core
+; 	(:require
+; 		[ring.adapter.jetty :as jetty]))
 
-(defn -main []
-	(jetty/run-jetty
-		(fn [req] {:status 200 :body "images/giphy.gif"}
-			{:port 5000}))
+(defn hello []
+	println [:div {:img "images/giphy.gif"}]
+	{:port 5000}
 	)
 
+(defn -main []
+	(hello))
 
-; (defn giphy []
-; 	(println "<html><body><img src='http://giphy.com/gifs/please-construction-patient-12onZb4hOx3xza' alt=""/></body></html>"))
+
+; (defn -main []
+; 	(jetty/run-jetty
+; 		(fn [req] {:status 200 :body "images/giphy.gif"}
+; 			{:port 5000}))
+; 	)
 
 
 ; (defn -main
