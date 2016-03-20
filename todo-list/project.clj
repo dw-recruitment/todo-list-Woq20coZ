@@ -7,8 +7,9 @@
   							[org.clojure/clojure "1.6.0"]
   							[ring/ring-core "1.4.0"]
   							[ring/ring-jetty-adapter "1.4.0"]
+                [hiccup "1.0.5"]
   							]
   :main todo-list.core/hello							
-  ; :main ^:skip-aot todo-list.core
-  ; :target-path "target/%s"
+  :main ^:skip-aot todo-list.core
+  :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
