@@ -5,12 +5,12 @@
 ; 		[ring.adapter.jetty :as jetty]))
 
 (defn hello []
-	println [:div {:img "images/giphy.gif"}]
+	[:div {:img "images/giphy.gif"}]
 	{:port 5000}
 	)
 
 (defn -main []
-	(hello))
+	(println hello))
 
 
 ; (defn -main []
